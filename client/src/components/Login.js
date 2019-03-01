@@ -29,7 +29,7 @@ export default class Login extends Component {
           alert('Sorry, please enter valid credentials or register')
           console.error(error)
         }
-          
+
       );
   };
   render() {
@@ -59,10 +59,11 @@ export default class Login extends Component {
                 value={this.state.password}
                 onChange={this.handleInputChange}
                 type="password"
+                placeholder="**********"
                 />
             </div>
             <div className="flex items-center justify-between">
-                <button className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                <button className="bg-green hover:bg-green-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                 Log In
                 </button>
                 <Link to="/register">
